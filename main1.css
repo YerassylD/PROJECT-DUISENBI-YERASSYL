@@ -1,0 +1,275 @@
+@import 'prettyPhoto.css';
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+}
+.all{
+  background-color: #efefef;
+}
+.up{
+  border:1px solid lightgrey;
+  background-color: white;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height:75px;
+}
+.menu {
+    width:60%;
+    left: 50px;
+    z-index: 10;
+    position: relative;
+    top: 8px;
+  float:left;
+  background-color: transparent;
+}
+.menu li {
+    list-style:none;
+    z-index: 11;
+}
+.menu img {
+  position: absolute;
+  top:11px;
+}
+     
+.menu a:hover {
+  color:white;
+}
+.search {
+    position: absolute;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #efefef;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 3px 25px 3px 75px;
+    height:20px;
+    float: right;
+    margin-bottom: 9px;
+    right: 50px;
+    top:14px;
+    color: white;
+    outline: none;
+
+}
+
+.search:focus {
+    width: 100px;
+    background-color: white;
+    color:black;
+}
+.main{
+  border:1px solid lightgrey;
+  border-radius: 1px;
+  position: absolute;
+  top:75px;
+  left:0px;
+  width:100%;
+  height: auto;
+  background-color:transparent;
+}
+.profile-info{
+  position: absolute;
+  border-bottom: 1px solid darkblue;
+  width: 90%;
+  height: 290px;
+  left:60px;
+}
+figure.profile-img {
+    border: 5px #efefef solid;
+    border-radius: 50%;
+    top:40px;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2), 1px 1px 4px rgba(0,0,0,0.3);
+    height: 150px;
+    left: 60px;
+    position: absolute;
+    width: 150px;
+    z-index: 3;
+    background: transparent;
+}
+figure.profile-img:hover {
+    background: rgba(0,0,0,0.7);
+}
+.user{
+  position: absolute;
+  font-size: 35px;
+  left:400px;
+  top:45px;
+  color:#666666;
+  background-color: transparent;
+}
+.edit{
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 600px;
+  top: 75px;
+  padding: 5px;
+  text-decoration: none;
+  color: grey;
+}
+.edit:hover{
+  border: 2px solid darkblue;
+  color: darkblue;
+}
+.add{
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  left: 745px;
+  top: 50px;
+  padding: 5px;
+  text-decoration: none;
+  color: grey;
+}
+.add:hover{
+  color: darkblue;
+}
+.name_s{
+  font-size: 19px;
+  font-weight: bold;
+  position: absolute;
+  left: 395px;
+  top: 98px;
+  padding: 5px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+}
+.date{
+  font-size: 19px;
+  position: absolute;
+  left: 595px;
+  top: 98px;
+  padding: 5px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+}
+.public{
+  font-size: 19px;
+  position: absolute;
+  left: 400px;
+  top: 136px;
+  padding: 5px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+}
+.public a{
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color:#4c4c4c;
+  background-color: transparent;
+}
+.f{
+  font-size: 19px;
+  position: absolute;
+  left: 565px;
+  top: 140px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+}
+.f a{
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color:#4c4c4c;
+  background-color: transparent;
+}
+.follows{
+  font-size: 19px;
+  position: absolute;
+  left: 705px;
+  top: 140px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+}
+.follows a{
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color:#4c4c4c;
+  background-color: transparent;
+}
+.profile-photo{
+  position: absolute;
+/*  border-bottom: 1px solid darkblue;*/
+  width: 90%;
+  height: auto;
+  top: 300px;
+  left:60px;
+}
+.add_p a{
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  top: -46px;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none;
+  color: grey;
+  background-color: white;
+  border:2px solid grey;
+  border-radius: 10px;
+}
+.add_p a:hover{
+  background-color: white;
+  color: darkblue;
+  border:2px solid darkblue;
+}
+
+
+.centered {
+  margin: auto auto;
+  display: inline-block;
+  width: 185px;
+  margin-bottom: 25px;
+}
+.thumbnail {
+  border-radius: 0px;
+  border: 1px solid #444;
+}
+.thumbnail img {
+  display: inline-block;
+  opacity: .75;
+}
+.thumbnail img:hover {
+  opacity: 1;
+}
+.gallery {
+  display: inline-block;
+  color: #fff;
+}
+.gallery h2 {
+  font-family: 'Yesteryear', arial, helvetica, sans;
+  color: #eee;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 4.5em;
+  font-weight: 200;
+  line-height: 1.65em;
+  border-bottom: 1px solid #000;
+  text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.76);
+}
+.credits a {
+  margin-right: 15px;
+  color: #555;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  background: rgba(0, 0, 0, 0.45);
+}
+.credits a:hover {
+  color: #999;
+  text-decoration: none;
+  background: #000;
+}

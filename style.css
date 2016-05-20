@@ -1,0 +1,343 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.user h1 {
+  display: block;
+  font-size: 50px;
+  margin: 20px auto 0;
+  width: 300px;
+}
+
+.user h1>small {
+  color: #aaaaaa;
+  font-size: .5em;
+}
+
+header {
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  height:   300px;
+  position: relative;
+  width:    100%;
+  background-color: grey;
+  z-index: 0;
+  margin-bottom: 20%;
+}
+
+figure.profile-banner{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  z-index:   -1;
+}
+figure .profile-banner img{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  z-index: -10;
+}
+
+figure.profile-picture {
+  background-position: center;
+  border: 5px #efefef solid;
+  border-radius: 50%;
+  bottom: -50px;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2), 1px 1px 4px rgba(0,0,0,0.3);
+  height: 148px;
+  left: 150px;
+  position: absolute;
+  width: 148px;
+  z-index: 3;
+}
+figure.profile-picture:hover {
+      background: rgba(0,0,0,0.7);
+}
+
+div.profile-stats {
+  bottom: 0;
+  border: 1px solid rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.7);
+  left: 0;
+  padding: 15px 15px 15px 350px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+div.profile-stats ul {
+  position: absolute;
+  list-style: none;
+  background-color: transparent;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  bottom: 0px;
+
+}
+
+div.profile-stats ul li {
+  color: #efefef;
+  display: inline-block;
+  float: left;
+  margin-right: 40px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.profile-stats li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile-stats li a:hover {
+    background-color: red;
+}
+
+div.profile-stats li span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+div.profile-stats a.follow {
+  display: block;
+  float: right;
+  color: #ffffff;
+  margin-top: 5px;
+  text-decoration: none;
+  background-color: red;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  right: 20px;
+}
+
+div.profile-stats button.follow {
+  position: relative;
+  float: right;
+  right: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 4px;
+  color: white;
+  background-color: red;
+  border-color: red;
+  box-shadow:0 4px darkred; 
+  outline: none;
+  cursor: pointer;
+}
+button .follow:hover{
+  background-color: darkred;
+}
+button .follow:active {
+  background-color: darkred;
+  box-shadow: 0 2px darkred;
+}
+header>h1 {
+  bottom: -50px;
+  color: #354B63;
+  font-size: 40px;
+  left: 350px;
+  position: absolute;
+  z-index: 5;
+  border-bottom: 200px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu li a:hover {
+    background-color: red;
+}
+input[type=text] {
+    position: absolute;
+    width: 70px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    height:10px;
+    float: right;
+    margin: 5px;
+    right: 5px;
+
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+.user{
+  border: 2px solid #efefef;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top:30px; 
+  background-color: white;
+}
+.user h1{
+  font-size: 40px;
+  position: absolute;
+  left: 350px;
+}
+.user a{
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  top:30px;
+}
+.user a:hover{
+  border: 2px solid red;
+  color: red;
+}
+#thumbsWrapper{
+    display: block;
+    position:relative;
+    height:auto;
+    width:100%;
+    left:0px;
+    right:0px;
+    top:120px;
+}
+#content{
+   position:absolute;
+   border: 0px;
+   top:30px;
+   height:auto;
+   width:100%;
+   left:0px;
+   background-color:#f2f2f2;
+   display: block;
+   padding-bottom:230px; 
+   padding-left: 0px;
+   left: 0px;
+}
+#content img{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    float:left;
+    margin:15px;
+    cursor:pointer;
+    float: center;
+}
+#content img:focus{
+  width: 500px;
+  height: 400px;
+}
+#content img:hover{
+      box-shadow: 0px 0px 10px #111;
+      opacity: 0.7;
+}
+#content a:hover{
+      box-shadow: 0px 0px 10px #111;
+      opacity: 0.7;
+}
+
+.placeholder{
+    float:left;
+    width:100%;
+    height:30px;
+    margin-bottom: 100px;
+}
+div .dd{
+  border: 2px solid #efefef;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 10;
+  right: 12px;
+
+}
+div .understat-centered {
+    margin: auto;
+    width: 1150px;
+    height: auto;
+}
+div .list_left{
+    float: left;
+    width: 200px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    list-style-type: none;
+    text-align: left;
+    opacity: 0.9;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(48,83,123,0.4);
+    margin-right: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+.list_left li a, .list_left li a:visited {
+    font-family: 'OpenSans-Light';
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;  
+}
+.list_left h4{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+.list_left li a:hover{
+  color:grey;
+  font-weight: bold;
+}
+.list_left li  {
+    font-family: 'OpenSans-Light';
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    margin-right: 20px
+}
+
